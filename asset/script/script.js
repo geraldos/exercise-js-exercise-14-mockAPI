@@ -7,7 +7,7 @@ async function add() {
         let genre = document.getElementById('genre').value;
         let releaseYear = document.getElementById('release_year').value;
         let imgLink = document.getElementById('img_link').value;
-        let description = document.getElementById('decription').value;
+        let description = document.getElementById('description').value;
 
         let movieData = {
             title,
