@@ -5,14 +5,14 @@ async function add() {
     try {
         let title = document.getElementById('title').value;
         let genre = document.getElementById('genre').value;
-        let release_year = document.getElementById('release_year').value;
+        let releaseYear = document.getElementById('release_year').value;
         let img_link = document.getElementById('img_link').value;
 
         let movieData = {
             title,
             genre,
-            release_year,
-            img_link
+            releaseYear,
+            imglink
         };
 
         let url = `https://5ef168d71faf160016b4d5c1.mockapi.io/api/todoapp/movies`;
