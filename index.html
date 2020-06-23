@@ -1,84 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MockAPI</title>
 
-    <link rel="stylesheet" href="./asset/style/style.css" />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 449px)"
-      href="./asset/style/main.mobile.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MockAPI</title>
 
-  <body>
-    <section class="sec1">
-      <h1 class="title1">Movie List</h1>
-      <form>
-        <div class="form1">
-          <input type="text" name="title" id="title" placeholder="Title" />
-          <input type="text" name="genre" id="genre" placeholder="Genre" />
-        </div>
+  <link rel="stylesheet" href="./asset/style/style.css" />
+  <link rel="stylesheet" media="screen and (max-width: 449px)" href="./asset/style/main.mobile.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+</head>
 
-        <div class="form2">
-          <input
-            type="release_year"
-            name="release_year"
-            id="release_year"
-            placeholder="Release Year"
-          />
-          <input
-            type="img_link"
-            name="img_link"
-            id="img_link"
-            placeholder="Image Link"
-          />
-        </div>
+<body>
+  <section class="sec1">
+    <h1 class="title1">Movie List</h1>
+    <form>
+      <div class="form1">
+        <input type="text" name="title" id="title" placeholder="Title" />
+        <input type="text" name="genre" id="genre" class="genre" placeholder="Genre" />
+      </div>
 
-        <div class="form4">
-          <textarea
-            rows="5"
-            id="description"
-            placeholder="description"
-          ></textarea>
-        </div>
+      <div class="form2">
+        <input type="release_year" name="release_year" id="release_year" placeholder="Release Year" />
+        <input type="img_link" name="img_link" id="img_link" class="img_link" placeholder="Image Link" />
+      </div>
 
-        <div class="form3">
-          <button id="add-btn" class="btn btn-primary" type="button">
-            Add Movie
-          </button>
-        </div>
-      </form>
-    </section>
+      <div class="form4">
+        <textarea rows="5" id="description" placeholder="description"></textarea>
+      </div>
 
-    <section class="sec2">
-      <h2 class="title2">Show Movie</h2>
-      <div class="form"></div>
-    </section>
+      <div class="form3">
+        <button id="add-btn" class="btn btn-primary" type="button">
+          Add Movie
+        </button>
+      </div>
+    </form>
+  </section>
 
-    <script src="./asset/script/script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <section class="sec2">
+    <h2 class="title2">Show Movie</h2>
+    <div class="form"></div>
+  </section>
+
+  <script src="./asset/script/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

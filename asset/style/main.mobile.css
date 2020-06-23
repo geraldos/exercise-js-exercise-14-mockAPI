@@ -42,3 +42,17 @@
 .btn {
     width: 225px;
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.genre {
+    margin-top: 10px;
+}
+
+.img_link {
+    margin-top: 10px;
+}

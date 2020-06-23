@@ -66,7 +66,7 @@ async function display() {
         card.setAttribute("style", "width: 18rem;")
 
         card.innerHTML = `
-                <img src="${element.imgLink}" alt="" />
+            <img src="${element.imgLink}" alt="" />
                 <div class="card-body">
                     <h4 class="card-title">${element.title}</h4>
                     <h5 class="card-title">${element.releaseYear}</h5>
