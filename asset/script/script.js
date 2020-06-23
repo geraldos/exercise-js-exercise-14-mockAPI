@@ -46,3 +46,36 @@ async function add() {
         console.error(error);
     }
 }
+
+
+async function display() {
+    let url = `https://5ef168d71faf160016b4d5c1.mockapi.io/api/todoapp/movies`;
+    let options = {
+        method: 'GET',
+        // headers: {
+        //     'Content-type': 'application/json'
+        // },
+    }
+
+    let response = await fetch(url, options);
+    let results = await response.json();
+
+    results.forEach((element) => {
+        let card = document.createElement("div");
+        card.setAttribute("class", "card")
+        card.setAttribute("style", "width: 18rem;")
+
+        card.innerHTML = `
+                <img src="${element.imgLink}" alt="" />
+                <div class="card-body">
+                    <h4 class="card-title">${element.title}</h4>
+                    <h5 class="card-title">${element.releaseYear}</h5>
+                    <p class="card-text">${element.description}</p>
+                </div>`;
+
+        let form = document.getElementsByClassName('form')
+        form[0].appendChild(card)
+    });
+    console.log(results)
+}
+display()

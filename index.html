@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="./asset/style/style.css" />
     <link
       rel="stylesheet"
+      media="screen and (max-width: 449px)"
+      href="./asset/style/main.mobile.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
@@ -16,6 +21,7 @@
 
   <body>
     <section class="sec1">
+      <h1 class="title1">Movie List</h1>
       <form>
         <div class="form1">
           <input type="text" name="title" id="title" placeholder="Title" />
@@ -37,10 +43,6 @@
           />
         </div>
 
-        <div class="form3">
-          <button id="add-btn" type="submit">Add</button>
-        </div>
-
         <div class="form4">
           <textarea
             rows="5"
@@ -48,7 +50,18 @@
             placeholder="description"
           ></textarea>
         </div>
+
+        <div class="form3">
+          <button id="add-btn" class="btn btn-primary" type="button">
+            Add Movie
+          </button>
+        </div>
       </form>
+    </section>
+
+    <section class="sec2">
+      <h2 class="title2">Show Movie</h2>
+      <div class="form"></div>
     </section>
 
     <script src="./asset/script/script.js"></script>

@@ -2,17 +2,12 @@
 
 * {
     font-family: "Quicksand", sans-serif;
-    font-size: x-large;
+    font-size: large;
 }
 
 .title1 {
     text-align: center;
-    margin-top: 10px;
-}
-
-.title2 {
-    text-align: center;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .sec1 {
@@ -20,7 +15,7 @@
 }
 
 .form1 {
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     margin-top: 25px;
 }
@@ -41,15 +36,9 @@
 }
 
 #description {
-    width: 580px;
+    width: 225px;
 }
 
 .btn {
-    width: 580px;
-}
-
-.card-body {
-    width: 30%;
-    display: flex;
-    flex-direction: row;
+    width: 225px;
 }
