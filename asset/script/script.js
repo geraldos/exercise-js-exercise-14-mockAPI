@@ -6,13 +6,15 @@ async function add() {
         let title = document.getElementById('title').value;
         let genre = document.getElementById('genre').value;
         let releaseYear = document.getElementById('release_year').value;
-        let img_link = document.getElementById('img_link').value;
+        let imgLink = document.getElementById('img_link').value;
+        let description = document.getElementById('decription').value;
 
         let movieData = {
             title,
             genre,
             releaseYear,
-            imglink
+            imgLink,
+            description
         };
 
         let url = `https://5ef168d71faf160016b4d5c1.mockapi.io/api/todoapp/movies`;
@@ -24,7 +26,7 @@ async function add() {
 
         // Kalau sudah terdaftar
         if (addedMovie.length > 0) {
-            alert(`Movie sudah terdaftar`);
+            alert(`Movie already exists`);
         } else {
             // Kalau belum terdaftar, lakukan registrasi
             let options = {
@@ -38,7 +40,7 @@ async function add() {
             let result = await response.json();
 
             console.log(result)
-            alert(`Terima kasih sudah mendaftar`);
+            alert(`Thankyou, Movie has been added`);
         }
     } catch (error) {
         console.error(error);
